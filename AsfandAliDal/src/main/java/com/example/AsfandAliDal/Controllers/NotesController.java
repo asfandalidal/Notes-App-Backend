@@ -13,7 +13,7 @@ import java.util.List;
 public class NotesController {
 
     @Autowired
-    private NotesServic notesService;
+    private NotesService notesService;
 
     @PostMapping
     public Notes createNotes(@RequestBody Notes note) {
