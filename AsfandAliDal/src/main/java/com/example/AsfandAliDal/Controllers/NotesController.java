@@ -2,9 +2,7 @@ package com.example.AsfandAliDal.Controllers;
 
 
 import com.example.AsfandAliDal.Modal.Notes;
-import com.example.AsfandAliDal.Repository.NotesRepository;
 import com.example.AsfandAliDal.Services.NotesService;
-import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +13,7 @@ import java.util.List;
 public class NotesController {
 
     @Autowired
-    private NotesService notesService;
+    private NotesServic notesService;
 
     @PostMapping
     public Notes createNotes(@RequestBody Notes note) {
